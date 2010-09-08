@@ -49,7 +49,7 @@ APRInitializer::APRInitializer() {
 }
 
 APRInitializer::~APRInitializer() {
-    apr_terminate();
+    //apr_terminate();
     isDestructed = true;
 }
 

@@ -57,7 +57,10 @@ RepositorySelectorPtr& LogManager::getRepositorySelector() {
    //     call to initialize APR and trigger "start" of logging clock
    //
    APRInitializer::initialize();
-   static spi::RepositorySelectorPtr selector;
+   //static spi::RepositorySelectorPtr selector;
+   static spi::RepositorySelectorPtr * pselector = new spi::RepositorySelectorPtr;
+   static spi::RepositorySelectorPtr & selector = * pselector;
+
    return selector;
 }
 

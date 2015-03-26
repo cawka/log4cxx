@@ -30,6 +30,7 @@
 #include <cctype>
 #include <apr.h>
 
+#include <stdlib.h>
 
 using namespace log4cxx;
 using namespace log4cxx::helpers;

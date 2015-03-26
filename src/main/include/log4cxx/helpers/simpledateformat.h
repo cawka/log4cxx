@@ -29,7 +29,7 @@
 #include <vector>
 #include <time.h>
 
-namespace std { class locale; }
+#include <locale>
 
 namespace log4cxx
 {
